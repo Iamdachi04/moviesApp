@@ -21,11 +21,34 @@ header{
     background-color: transparent;
     border: 3px solid darkcyan;
     border-radius: 50px;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    color: white;
 }
 
+.search::placeholder{
+    color: #7178d0;
+}
+
+.search:focus{
+    outline: none;
+    background-color: rgb(14, 19, 57);
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.movie{
+    width: 32%;
+    margin: 1%;
+    background-color: rgb(14, 19, 57);
+    border-radius: 10px;
+}
 
 img{
-    width: 30%;
+    width: 95%;
     height: auto;
-    margin: 0 3%;
+    align-self: center;
+    justify-self: center;
 }
