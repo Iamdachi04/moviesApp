@@ -44,11 +44,63 @@ main{
     margin: 1%;
     background-color: rgb(14, 19, 57);
     border-radius: 10px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
 }
 
 img{
-    width: 95%;
+    width: 100%;
     height: auto;
     align-self: center;
     justify-self: center;
+    margin-top:2%;
+}
+
+
+.movie-info{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 1px;
+}
+
+
+.movie-info h3{
+    margin-top: 0;
+}
+
+.movie-info span{
+    background-color: rgb(14, 19, 57);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+
+}
+
+.movie-info span.green{
+    color: lightgreen;
+}
+.movie-info span.orange{
+    color: orange;
+}
+.movie-info span.red{
+    color: red;
+}
+
+.overview{
+    background-color: white;
+    padding: 2rem;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+}
+
+.movie:hover .overview{
+transform: translateY(0%);
 }
