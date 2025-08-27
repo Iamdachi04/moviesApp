@@ -6,6 +6,13 @@ const image_path = "https://image.tmdb.org/t/p/w1280";
 
 const search_url = 'https://api.themoviedb.org/3/search/movie?api_key=ed10cc0b0082ae1de993727d8619446d&query=="'
 
+const form = document.getElementById('form');
+const search =document.getElementById('search');
 
-
-
+async function getMovies(url){
+    const response =await fetch(url);
+    console.log(response)
+    const data = await response.json();
+    console.log(data);
+    console.log(data.results);
+}
