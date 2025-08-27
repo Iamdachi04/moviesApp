@@ -16,3 +16,17 @@ async function getMovies(url){
     console.log(data);
     console.log(data.results);
 }
+getMovies(API_URL);
+
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+
+
+    const searchTerm = search.value;
+    if(searchTerm && searchTerm!==''){
+          getMovies(search_url+searchTerm);
+          search.value=''
+    }else{
+        window.location.reload();
+    }
+})
