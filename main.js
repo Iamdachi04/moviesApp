@@ -37,6 +37,10 @@ function showMovies(movies){
     mian.innerHTML='';
     movies.forEach((el) => {
         const {title, poster_path, vote_average,overview}=el;
+        if(poster_path===null){
+            movie.innerHTML=``
+            movie.classList.add('unseen');
+        }
         const movie = document.createElement('div');
         movie.classList.add('movie');
 

@@ -98,9 +98,13 @@ img{
     right: 0;
     left: 0;
     max-height: 100%;
-    transform: translateY(150%);
+    transform: translateY(250%);
 }
 
 .movie:hover .overview{
 transform: translateY(0%);
+}
+
+.unseen{
+    visibility: hidden;
 }
