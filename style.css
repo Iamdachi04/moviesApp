@@ -40,7 +40,7 @@ main{
     flex-wrap: wrap;
 }
 .movie{
-    width: 32%;
+    width: 30%;
     margin: 1%;
     background-color: rgb(14, 19, 57);
     border-radius: 10px;
@@ -98,7 +98,7 @@ img{
     right: 0;
     left: 0;
     max-height: 100%;
-    transform: translateY(101%);
+    transform: translateY(150%);
 }
 
 .movie:hover .overview{
